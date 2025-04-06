@@ -3,9 +3,10 @@ import pyautogui
 import time
 from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
+load_dotenv(".env.example")
 
-MESSAGES = os.getenv('MESSAGES')
+MESSAGES = os.environ.get('MESSAGES')
 
 messagesList = MESSAGES.split(',') if MESSAGES else []
 
