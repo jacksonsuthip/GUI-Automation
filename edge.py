@@ -28,8 +28,10 @@ search_terms = [
     "Azure",
     "Google Cloud",
     "gold price today in india",
-    "Sensex today",
-    "Nifty today"
+    "Sensex today in india",
+    "Nifty today in india",
+    "Bitcoin price today in india",
+    "Dollar price today in india"
 ]
 
 # Select 50% of the list randomly
@@ -54,6 +56,6 @@ for term in terms:
     pyautogui.typewrite(term)
     time.sleep(get_random_number(2, 5))
     pyautogui.press('enter')
-    time.sleep(get_random_number(2, 3))
+    time.sleep(get_random_number(3, 5))
 
 print("Automation complete!")
